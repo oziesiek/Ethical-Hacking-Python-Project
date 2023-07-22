@@ -24,6 +24,9 @@ The repository currently includes the following Python projects:
 
 9. Replace Downloads: Replaces downloads from websites with custom files.
 
+10. MAC Address Changer: Changes the MAC address of a network interface on Unix-like systems.
+
+
 ## Usage
 
 Each project in this repository is contained in its own directory and includes a separate README file with instructions on how to run the Python program and understand its functionality. Before running any of the projects, please review the README and ensure you have the necessary permissions to perform the actions in your environment.
