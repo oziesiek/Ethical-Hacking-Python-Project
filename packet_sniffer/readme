@@ -1,0 +1,32 @@
+This README provides users with an overview of the repository, explains how to use the 
+
+# HTTP Packet Sniffer
+
+This repository contains a Python script for sniffing HTTP packets on a specified network interface to monitor HTTP requests and identify potential username and password information.
+
+## Prerequisites
+
+Before running the script, ensure you have the required library installed. You can install it using the following command:
+
+```bash
+pip install scapy
+Usage
+To use the HTTP Packet Sniffer, execute the script with the following command:
+
+bash
+Copy code
+python http_packet_sniffer.py
+By default, the script will sniff packets on the "eth0" network interface. If you want to sniff on a different interface, modify the sniff function parameter to the appropriate interface name.
+
+Functionality
+The HTTP Packet Sniffer captures HTTP requests and extracts the requested URLs. If the captured packet contains a possible login information (e.g., username, password, email), it will be printed to the console.
+
+Please note that this script is intended for educational and legitimate purposes, such as network diagnostics, security analysis, or penetration testing on networks that you own or have explicit permission to test.
+
+Important Note
+Sniffing network packets without proper authorization may violate privacy laws and is illegal in many jurisdictions. Use this script responsibly and only on networks where you have explicit permission from the network owner.
+
+Disclaimer
+The creator of this repository is not responsible for any misuse or damage caused by the use of this script. Use it responsibly and ensure compliance with applicable laws and regulations.
+
+Happy sniffing and stay ethical!
