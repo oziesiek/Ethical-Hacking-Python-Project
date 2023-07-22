@@ -1,0 +1,31 @@
+This is the same README content for the File Replacement Attack script, presented in a single list format for easy copying into your repository's README.md file.
+
+# File Replacement Attack
+
+This repository contains a Python script for performing a File Replacement Attack using the netfilterqueue and scapy libraries. The attack intercepts HTTP traffic, searches for requests for ".exe" files, and replaces the requested files with a 301 Moved Permanently response, redirecting the target to a specified URL.
+
+## Prerequisites
+
+Before running the script, ensure you have the required libraries installed. You can install them using the following commands:
+
+pip install netfilterqueue
+pip install scapy
+
+Usage
+Setting up iptables: Before running the script, make sure to set up iptables to redirect the packets to the netfilterqueue. Execute the following commands:
+
+iptables -I FORWARD -j NFQUEUE --queue-num 0
+Running the script: To use the File Replacement Attack script, execute it with the following command:
+
+python replace_downloads.py
+
+Functionality
+The script intercepts packets using the netfilterqueue and scapy, and it identifies HTTP requests for ".exe" files on port 80. Upon detection, it performs a file replacement attack by modifying the packet payload and sending a 301 Moved Permanently response, redirecting the target to a specified URL (http://192.168.120.128/evil-files/evil.exe).
+
+Warning
+Performing file replacement attacks can lead to legal consequences and is considered an unethical practice. This script is provided for educational purposes only and should be used responsibly and with explicit permission on networks that you own or have authorization to test.
+
+Disclaimer
+The creator of this repository is not responsible for any misuse or damage caused by the use of this script. Use it responsibly and ensure compliance with applicable laws and regulations.
+
+Happy and ethical hacking!
