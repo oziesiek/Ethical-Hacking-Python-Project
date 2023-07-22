@@ -20,7 +20,7 @@ Running the script: To use the File Replacement Attack script, execute it with t
 python replace_downloads.py
 
 Functionality
-The script intercepts packets using the netfilterqueue and scapy, and it identifies HTTP requests for ".exe" files on port 80. Upon detection, it performs a file replacement attack by modifying the packet payload and sending a 301 Moved Permanently response, redirecting the target to a specified URL (http://192.168.120.128/evil-files/evil.exe).
+The script intercepts packets using the netfilterqueue and scapy, and it identifies HTTP requests for ".exe" files on port 80. Upon detection, it performs a file replacement attack by modifying the packet payload and sending a 301 Moved Permanently response, redirecting the target to a specified URL (http:/your_exploit_server/evil.exe).
 
 Warning
 Performing file replacement attacks can lead to legal consequences and is considered an unethical practice. This script is provided for educational purposes only and should be used responsibly and with explicit permission on networks that you own or have authorization to test.
