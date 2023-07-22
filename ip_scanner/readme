@@ -1,5 +1,3 @@
-This README provides users with a brief overview of the repository, explains how to use the ARP Scanner script, lists the prerequisit
-
 # ARP Scanner
 
 This repository contains a simple Python script for scanning the local network using ARP (Address Resolution Protocol) to discover active hosts and their corresponding MAC addresses.
