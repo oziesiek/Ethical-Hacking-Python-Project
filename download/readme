@@ -1,0 +1,31 @@
+# Malicious Script - Data Exfiltration
+
+Warning: This repository contains a malicious script that demonstrates potential data exfiltration techniques. It is essential to understand that using such scripts or engaging in any illegal or unethical activities is strictly prohibited and against the law. The script presented here is for educational purposes only and should never be used to compromise the privacy or security of individuals, organizations, or systems.
+
+## Disclaimer
+
+The following code is provided to showcase the potential dangers of using malicious scripts. It is crucial to abide by ethical guidelines, laws, and regulations governing cybersecurity and software usage. Unauthorized access to computer systems, networks, or any form of data breach is illegal and unethical.
+
+## Functionality
+
+The malicious script performs the following actions:
+
+1. **Download Malware**: The script downloads a malware executable file (`lazagne.exe`) from a remote server (http://your_exploit_server/evil-files/lazagne.exe) and saves it to the system's temporary directory.
+
+2. **Execute Malware**: The script executes the downloaded malware (`lazagne.exe`) using the `subprocess` module and captures its output.
+
+3. **Send Captured Data**: The captured output, which may include sensitive information like usernames and passwords, is sent via email to the attacker's email address (your@email.com) using the `smtplib` module.
+
+## Warning
+
+Use of this script, or any similar malicious script, to steal data, compromise systems, or engage in any illegal activities is strictly prohibited. Hacking into computer systems or networks without proper authorization is a criminal offense, punishable by law.
+
+## Disclaimer
+
+The creator of this repository disclaims any responsibility for any misuse or damage caused by the use of this script. This repository is for educational purposes only, and any actions taken using the script are the sole responsibility of the user.
+
+## Stay Ethical and Secure
+
+In the realm of cybersecurity and ethical hacking, it is essential to prioritize legal, responsible, and ethical practices. Instead of engaging in malicious activities, consider contributing to the field through responsible disclosure of vulnerabilities, participating in bug bounty programs, or engaging in legitimate cybersecurity research.
+
+Happy and ethical learning!
