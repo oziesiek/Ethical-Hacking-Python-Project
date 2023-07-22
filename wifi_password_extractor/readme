@@ -1,0 +1,31 @@
+Welcome to the WiFi Password Extractor project! This Python script is designed for educational purposes to demonstrate how to extract WiFi passwords for saved network profiles on Windows systems. Please note that this script is meant for learning ethical hacking and cybersecurity concepts and should never be used for any illegal or unethical activities.
+
+Purpose
+The purpose of this project is to showcase how to extract WiFi passwords from saved network profiles on Windows systems. The script uses the "netsh" command-line utility to retrieve network profiles and their corresponding clear-text passwords.
+
+How It Works
+The script starts by importing the necessary libraries: subprocess, smtplib, and re.
+
+The send_mail() function is defined to send the extracted WiFi passwords to a specified email address using the Gmail SMTP server.
+
+The script uses the "netsh wlan show profile" command to retrieve a list of all saved WiFi network profiles on the Windows system.
+
+The re.findall() function is used to extract the names of the saved network profiles from the command output.
+
+For each network profile name, the script runs the "netsh wlan show profile [network_name] key=clear" command to retrieve the clear-text password for that network.
+
+The extracted WiFi network names and passwords are then concatenated into a single string.
+
+Finally, the script sends the collected information to the specified email address using the send_mail() function.
+
+Prerequisites
+Before running the Python script, ensure that you have the required libraries installed. This script uses the built-in Python libraries subprocess, smtplib, and re and does not require any additional installations.
+
+Please note that this script is designed to work on Windows systems only, as it relies on the "netsh" command, which is specific to Windows.
+
+Usage
+Replace the placeholder email and password in the send_mail() function with your own Gmail credentials. This allows the script to send the extracted WiFi passwords to your email address.
+
+Run the Python script in a Windows environment by executing the following command:
+
+python wifi_password_extractor.py
