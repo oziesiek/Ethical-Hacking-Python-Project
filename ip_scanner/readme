@@ -1,0 +1,31 @@
+This README provides users with a brief overview of the repository, explains how to use the ARP Scanner script, lists the prerequisit
+
+# ARP Scanner
+
+This repository contains a simple Python script for scanning the local network using ARP (Address Resolution Protocol) to discover active hosts and their corresponding MAC addresses.
+
+## Prerequisites
+
+Before running the script, ensure you have the required libraries installed. You can install them using the following command:
+
+```bash
+pip install scapy
+Usage
+The script accepts a target IP address or IP range as an argument and sends ARP requests to the specified target(s). It then receives responses and displays the IP addresses along with their corresponding MAC addresses of the active hosts.
+
+To use the ARP Scanner, execute the script with the following command:
+
+bash
+Copy code
+python arp_scanner.py -t <target>
+Replace <target> with the IP address or IP range you want to scan. For example:
+
+bash
+Copy code
+python arp_scanner.py -t 192.168.1.1/24
+Please note that this script is intended for educational and legitimate purposes, such as network diagnostics or penetration testing on networks that you own or have explicit permission to test.
+
+Disclaimer
+The creator of this repository is not responsible for any misuse or damage caused by the use of this script. Use it responsibly and only on networks where you have proper authorization.
+
+Happy scanning!
