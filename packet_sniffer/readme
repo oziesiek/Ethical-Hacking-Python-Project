@@ -8,13 +8,10 @@ This repository contains a Python script for sniffing HTTP packets on a specifie
 
 Before running the script, ensure you have the required library installed. You can install it using the following command:
 
-```bash
 pip install scapy
 Usage
 To use the HTTP Packet Sniffer, execute the script with the following command:
 
-bash
-Copy code
 python http_packet_sniffer.py
 By default, the script will sniff packets on the "eth0" network interface. If you want to sniff on a different interface, modify the sniff function parameter to the appropriate interface name.
 
