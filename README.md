@@ -25,6 +25,9 @@ The repository currently includes the following Python projects:
 9. Replace Downloads: Replaces downloads from websites with custom files.
 
 10. MAC Address Changer: Changes the MAC address of a network interface on Unix-like systems.
+  
+11. WiFi Password Extractor: Extracts WiFi passwords for saved network profiles on Windows systems.
+
 
 
 ## Usage
