@@ -1,5 +1,3 @@
-This is the same README content, but formatted as code for easy copy-pasting into your repository's
-
 # DNS Spoofing
 
 This repository contains a Python script for performing DNS (Domain Name System) spoofing attack on a target machine. The DNS spoofing attack redirects the target's DNS requests for a specific domain (e.g., www.bing.com) to a different IP address, causing the target to be redirected to a spoofed website.
