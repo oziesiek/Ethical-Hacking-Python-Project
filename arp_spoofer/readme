@@ -1,0 +1,31 @@
+This README provides users with an overview of the repository, explains how to use the ARP Spoo
+
+# ARP Spoofing
+
+This repository contains a Python script for performing ARP (Address Resolution Protocol) spoofing attack on a target and the gateway within the same local network. The ARP spoofing attack tricks the target into believing that the attacker's machine is the gateway, and tricks the gateway into believing that the attacker's machine is the target.
+
+## Prerequisites
+
+Before running the script, ensure you have the required library installed. You can install it using the following command:
+
+pip install scapy
+Usage
+To use the ARP Spoofing script, execute the script with the following command:
+
+python arp_spoofing.py
+Important: Before running the script, make sure you have the appropriate permissions to perform ARP spoofing attacks on your network. ARP spoofing is considered a security attack and is illegal unless performed with explicit authorization on a network that you own or have permission to test.
+
+Functionality
+get_mac(ip): This function sends an ARP request to the specified IP address and returns the MAC address of the corresponding host.
+
+spoof(target_ip, spoof_ip): This function performs the ARP spoofing attack by sending ARP packets to the target and the gateway, pretending to be each other.
+
+restore(destination_ip, source_ip): This function resets the ARP tables of the target and the gateway to their original state, undoing the ARP spoofing attack.
+
+Warning
+ARP spoofing is a powerful attack technique, and using it without permission on unauthorized networks can lead to legal consequences. Please use this script responsibly and only on networks that you own or have explicit authorization to test.
+
+Disclaimer
+The creator of this repository is not responsible for any misuse or damage caused by the use of this script. Use it responsibly and ensure compliance with applicable laws and regulations.
+
+Happy and ethical hacking!
