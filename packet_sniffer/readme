@@ -1,5 +1,3 @@
-This README provides users with an overview of the repository, explains how to use the 
-
 # HTTP Packet Sniffer
 
 This repository contains a Python script for sniffing HTTP packets on a specified network interface to monitor HTTP requests and identify potential username and password information.
