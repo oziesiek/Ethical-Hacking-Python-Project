@@ -1,5 +1,3 @@
-This is the same README content for the File Replacement Attack script, presented in a single list format for easy copying into your repository's README.md file.
-
 # File Replacement Attack
 
 This repository contains a Python script for performing a File Replacement Attack using the netfilterqueue and scapy libraries. The attack intercepts HTTP traffic, searches for requests for ".exe" files, and replaces the requested files with a 301 Moved Permanently response, redirecting the target to a specified URL.
