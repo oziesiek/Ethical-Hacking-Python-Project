@@ -1,1 +1,33 @@
+The script performs the following actions:
 
+Downloads a malicious PDF file from "http://attacker.address/evil-files/sample.pdf".
+Executes the downloaded PDF file using the system's default application for PDFs.
+Downloads a malicious executable (reverse backdoor) from "http://attacker.address/evil-files/reverse_backdoor.exe".
+Executes the downloaded executable using a shell command.
+Removes the downloaded files ("sample.pdf" and "reverse_backdoor.exe") from the temporary directory.
+Note: This script is provided for educational and informational purposes only. Unauthorized use for malicious purposes is strictly prohibited. Be cautious when handling and executing unfamiliar code.
+
+Please replace "http://attacker.address/evil-files" with the actual URL of the attacker-controlled address if you intend to test or analyze the script.
+Instruction for compile files:
+
+Windows
+pyinstaller --onefile --noconsole --icon=icon.ico script_name.py
+Replace script_name.py with the actual name of your Python script and icon.ico with the path to the icon file you want to use.
+
+After compilation, you can find the executable in the dist directory.
+
+Linux
+pyinstaller --onefile --noconsole --icon=icon.ico script_name.py
+Replace script_name.py with the actual name of your Python script and icon.ico with the path to the icon file you want to use.
+
+After compilation, you can find the executable in the dist directory.
+
+macOS
+pyinstaller --onefile --noconsole --icon=icon.icns script_name.py
+Replace script_name.py with the actual name of your Python script and icon.icns with the path to the icon file you want to use.
+
+After compilation, you can find the executable in the dist directory.
+
+These commands use the --noconsole flag to hide the console window and the --icon flag to specify the path to the icon file you want to use for the executable.
+
+Make sure to replace script_name.py with your actual script name and adjust the icon file path accordingly.
