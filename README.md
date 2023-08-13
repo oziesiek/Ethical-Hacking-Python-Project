@@ -30,7 +30,7 @@ The repository currently includes the following Python projects:
 
 12. Backdoor: A Python script & compiled file allowing remote command execution on a target machine.
 
-13. Trojan: Malicious PDF Executor. Downloads and runs a malicious PDF file, leveraging the system's default PDF application for execution.
+13. Trojan: Malicious PDF Executor. Downloads and runs a malicious PDF file, leveraging the system's default PDF application for execution. 
 
 ## Usage
 
