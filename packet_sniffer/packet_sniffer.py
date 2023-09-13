@@ -8,7 +8,7 @@ def sniff(interface):
 
 # Function to extract the URL from an HTTP packet
 def get_url(packet):
-    return packet[http.HTTPRequest].Host + packet[http.HTTPRequest].Path
+    return packet[http.HTTPRequest].Host.decode() + packet[http.HTTPRequest].Path.decode()
 
 # Function to extract login information from a packet's payload
 def get_login_info(packet):
