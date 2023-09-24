@@ -1,0 +1,31 @@
+# Network Host and Service Discovery
+
+This Python script is designed for network host and service discovery using Scapy. It allows you to discover active hosts on a given network or IP address and identify open ports on those hosts. Please use this script responsibly and only on networks where you have proper authorization.
+
+## Prerequisites
+
+Before running the script, ensure you have the necessary libraries installed. You can install Scapy using the following command:
+pip install scapy
+
+Usage
+To use the Network Host and Service Discovery script, follow these steps:
+
+Clone this repository to your local machine.
+
+Execute the script with the following command:
+python scanner.py <target>
+
+Replace <target> with the IP address, IP range, or hostname you want to scan. For example:
+python scanner.py 192.168.1.1
+
+The script will perform host discovery using ICMP Echo requests and then attempt to discover open ports on the discovered hosts.
+
+Open ports will be displayed along with the corresponding host's IP address.
+
+Disclaimer
+This script is intended for educational and legitimate purposes, such as network diagnostics, security assessments, or penetration testing on networks that you own or have explicit permission to test. The creator of this script is not responsible for any misuse or damage caused by its use. Ensure that you comply with all relevant laws and regulations in your jurisdiction when using this script.
+
+Happy network exploration!
+
+
+
