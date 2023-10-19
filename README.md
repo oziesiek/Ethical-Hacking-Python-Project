@@ -6,33 +6,26 @@ Welcome to the Ethical Hacking Python Projects repository! This repository conta
 
 The repository currently includes the following Python projects:
 
-1. ARP Spoofer: A program to spoof ARP packets on a local network.
+# Security Tools Collection
 
-2. Code Injector: Demonstrates how to inject code into HTML pages.
+Explore our diverse set of security tools designed for educational and authorized purposes:
 
-3. DNS Spoofer: Spoofs DNS responses to redirect traffic.
-
-4. Download Module: A module to download files from URLs.
-
-5. Execute and Send Email: Sends an email with the output of a command execution.
-
-6. IP Scanner: Scans a range of IP addresses to discover active hosts.
-
-7. Keylogger: Records keystrokes on the system for educational purposes.
-
-8. Packet Sniffer: Captures and analyzes network packets.
-
-9. Replace Downloads: Replaces downloads from websites with custom files.
-
-10. MAC Address Changer: Changes the MAC address of a network interface on Unix-like systems.
-  
-11. WiFi Password Extractor: Extracts WiFi passwords for saved network profiles on Windows systems.
-
-12. Backdoor: A Python script & compiled file allowing remote command execution on a target machine.
-
-13. Trojan: Malicious PDF Executor. Downloads and runs a malicious PDF file, leveraging the system's default PDF application for execution.
-
-14. Advanced IP scanner. Discover active hosts and open ports on a network.
+1. ARP Spoofer: Spoofs ARP packets on a local network, enhancing network security awareness.
+2. Backdoor: Allows remote command execution on a target machine; use responsibly for testing purposes.
+3. Code Injector: Demonstrates HTML code injection techniques, fostering a deeper understanding of web vulnerabilities.
+4. DNS Spoofer: Spoofs DNS responses to redirect traffic, highlighting potential security loopholes.
+5. Download Module: Downloads files from URLs securely and efficiently for legitimate purposes.
+6. Email Bomber: Sends multiple emails to a target address, emphasizing email security configurations.
+7. Execute and Send Email: Sends emails with the output of command executions, promoting secure communication practices.
+8. IP Scanner: Scans a range of IP addresses to discover active hosts, aiding network exploration.
+9. Keylogger: Records keystrokes for educational purposes, enhancing awareness about potential security risks.
+10. MAC Address Changer: Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
+11. Packet Sniffer: Captures and analyzes network packets, providing insights into network data flow.
+12. Phone finder: Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
+13. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
+14. Trojan:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
+15. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, enhancing user awareness about network security.
+16. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
 
 ## Usage
 
