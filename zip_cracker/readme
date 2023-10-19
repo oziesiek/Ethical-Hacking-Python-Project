@@ -1,0 +1,26 @@
+# ZIP File Password Cracker
+
+This Python script is designed to crack a password-protected ZIP file using a dictionary attack. It attempts to extract the contents of a protected ZIP file ('you_protected_file.zip') by trying different passwords from a provided dictionary file ('darkweb2017-top10000.txt'). This script can be used for educational purposes, security assessments, or data recovery on password-protected ZIP files for which you have legitimate access and authorization.
+
+## Prerequisites
+
+- Python 3.x
+- No external libraries are required; this script utilizes Python's built-in `zipfile` library.
+
+## Usage
+
+1. Make sure you have the script ('zip_password_cracker.py'), the ZIP file to be cracked ('you_protected_file.zip'), and the dictionary file containing potential passwords ('darkweb2017-top10000.txt') in the same directory.
+
+2. Open a terminal or command prompt and navigate to the directory containing the script and the files.
+
+3. Run the script using the command: `python zip_password_cracker.py`
+
+## How to Use
+
+When you run the script, it will iterate through the passwords in the dictionary file and attempt to extract the contents of the ZIP file using each password. If it successfully finds the correct password, it will display a success message containing the password and details about the extracted file. The script will then terminate.
+
+## Disclaimer
+
+This script is meant for educational and ethical purposes only. Ensure that you have legal authorization to attempt to crack the password of the ZIP file. Unauthorized or malicious use of this script is illegal and unethical.
+
+The author and the hosting platform are not responsible for any misuse, damage, or unauthorized actions performed using this script. Always respect privacy and security regulations while using this script.
