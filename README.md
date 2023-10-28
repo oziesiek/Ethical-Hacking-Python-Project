@@ -22,7 +22,7 @@ Explore our diverse set of security tools designed for educational and authorize
 10. MAC Address Changer: Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
 11. Packet Sniffer: Captures and analyzes network packets, providing insights into network data flow.
 12. Phone finder: Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
-13. Ransomware: 
+13. Ransomware: Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
 14. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
 15. Trojan:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
 16. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, enhancing user awareness about network security.
