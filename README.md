@@ -22,10 +22,11 @@ Explore our diverse set of security tools designed for educational and authorize
 10. MAC Address Changer: Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
 11. Packet Sniffer: Captures and analyzes network packets, providing insights into network data flow.
 12. Phone finder: Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
-13. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
-14. Trojan:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
-15. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, enhancing user awareness about network security.
-16. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
+13. Ransomware: 
+14. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
+15. Trojan:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
+16. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, enhancing user awareness about network security.
+17. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
 
 ## Usage
 
