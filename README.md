@@ -13,20 +13,21 @@ Explore our diverse set of security tools designed for educational and authorize
 1. ARP Spoofer: Spoofs ARP packets on a local network, enhancing network security awareness.
 2. Backdoor: Allows remote command execution on a target machine; use responsibly for testing purposes.
 3. Code Injector: Demonstrates HTML code injection techniques, fostering a deeper understanding of web vulnerabilities.
-4. DNS Spoofer: Spoofs DNS responses to redirect traffic, highlighting potential security loopholes.
-5. Download Module: Downloads files from URLs securely and efficiently for legitimate purposes.
-6. Email Bomber: Sends multiple emails to a target address, emphasizing email security configurations.
-7. Execute and Send Email: Sends emails with the output of command executions, promoting secure communication practices.
-8. IP Scanner: Scans a range of IP addresses to discover active hosts, aiding network exploration.
-9. Keylogger: Records keystrokes for educational purposes, enhancing awareness about potential security risks.
-10. MAC Address Changer: Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
-11. Packet Sniffer: Captures and analyzes network packets, providing insights into network data flow.
-12. Phone finder: Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
-13. Ransomware: Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
-14. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
-15. Trojan:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
-16. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, enhancing user awareness about network security.
-17. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
+4. DHCP Listener: Captures DHCP packets on a Wi-Fi network and displays relevant information about the devices
+5. DNS Spoofer: Spoofs DNS responses to redirect traffic, highlighting potential security loopholes.
+6. Download Module: Downloads files from URLs securely and efficiently for legitimate purposes.
+7. Email Bomber: Sends multiple emails to a target address, emphasizing email security configurations.
+8. Execute and Send Email: Sends emails with the output of command executions, promoting secure communication practices.
+9. IP Scanner: Scans a range of IP addresses to discover active hosts, aiding network exploration.
+10. Keylogger: Records keystrokes for educational purposes, enhancing awareness about potential security risks.
+11. MAC Address Changer: Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
+12. Packet Sniffer: Captures and analyzes network packets, providing insights into network data flow.
+13. Phone finder: Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
+14. Ransomware: Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
+15. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
+16. Trojan:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
+17. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, enhancing user awareness about network security.
+18. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
 
 ## Usage
 
