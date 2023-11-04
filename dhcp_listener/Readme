@@ -1,0 +1,23 @@
+DHCP Listener
+DHCP Listener is a Python script that captures DHCP packets on a Wi-Fi network and displays relevant information about the devices requesting IP addresses via DHCP. The script uses Scapy to sniff network packets and extract DHCP options like target MAC address, requested IP, hostname, and vendor ID.
+
+Requirements
+Python 3.x
+Scapy library (pip install scapy)
+
+Usage
+Clone the repository:
+
+git clone https://github.com/oziesiek/Ethical-Hacking-Python-Project/blob/main/dhcp_listener/dhcp_listener.py
+cd dhcp-listener
+Run the script:
+python dhcp_listener.py
+
+Features
+Captures DHCP packets on a Wi-Fi network.
+Displays device details including MAC address, hostname, vendor ID, and requested IP address.
+
+
+Sample Output
+[2023-11-03 - 14:30:45] : 00:1a:2b:3c:4d:5e - MyDevice / VendorID requested 192.168.1.100
+[2023-11-03 - 14:31:02] : 08:76:54:32:10:ab - AnotherDevice / AnotherVendorID re
