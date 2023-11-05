@@ -26,8 +26,9 @@ Explore our diverse set of security tools designed for educational and authorize
 14. Ransomware: Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
 15. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
 16. Trojan:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
-17. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, enhancing user awareness about network security.
-18. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
+17. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, and sends them by e-mail to a defined address.
+18. WiFi All OS password extractor: Retrieves saved WiFi passwords from Windows, Linux & MacOs.
+19. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
 
 ## Usage
 
