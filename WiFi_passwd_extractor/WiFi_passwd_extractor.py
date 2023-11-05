@@ -2,6 +2,7 @@ import subprocess
 import os
 import re
 from collections import namedtuple
+import platform
 import configparser
 
 # Function to retrieve saved SSIDs in a Windows machine
@@ -41,49 +42,48 @@ def print_windows_profiles(profile):
     """Prints the Windows Wi-Fi profiles"""
     print(f"{profile.ssid:<25} {profile.ciphers:<15} {profile.key}")
 
-# Function to extract saved Wi-Fi passwords in Linux
-def get_linux_saved_wifi_passwords(verbose=1):
-    """Extracts saved Wi-Fi passwords in Linux from /etc/NetworkManager/system-connections/ directory"""
-    network_connections_path = "/etc/NetworkManager/system-connections/"
-    fields = ["ssid", "auth_alg", "key_mgmt", "psk"]
-    Profile = namedtuple("Profile", [f.replace("-", "_") for f in fields], defaults=("", "", "", ""))
+# Function to retrieve saved SSIDs in a macOS machine
+def get_macos_saved_ssids():
+    """Returns a list of saved SSIDs in macOS using security command"""
+    output = subprocess.check_output(["security", "find-generic-password", "-D", "AirPort", "-g"]).decode()
+    ssids = re.findall(r"\"ssid\"<blob>=(.*?)\n", output, re.DOTALL)
+    return ssids
+
+# Function to extract saved Wi-Fi passwords from macOS
+def get_macos_saved_wifi_passwords(verbose=1):
+    """Extracts saved Wi-Fi passwords in macOS using security command"""
+    ssids = get_macos_saved_ssids()
+    Profile = namedtuple("Profile", ["ssid", "password"], defaults=("", ""))
     profiles = []
-    for file in os.listdir(network_connections_path):
-        data = {k.replace("-", "_"): None for k in fields}
-        config = configparser.ConfigParser()
-        config.read(os.path.join(network_connections_path, file))
-        for _, section in config.items():
-            for k, v in section.items():
-                if k in fields:
-                    data[k.replace("-", "_")] = v
-        profile = Profile(**data)
+    for ssid in ssids:
+        ssid_details = subprocess.check_output(["security", "find-generic-password", "-D", "AirPort", "-l", ssid, "-w"]).decode().strip()
+        profile = Profile(ssid=ssid, password=ssid_details)
         if verbose >= 1:
-            print_linux_profiles(profile)
+            print_macos_profiles(profile)
         profiles.append(profile)
     return profiles
 
-# Function to print Linux Wi-Fi profiles
-def print_linux_profiles(profile):
-    """Prints the Linux Wi-Fi profiles"""
-    ssid = profile.ssid if profile.ssid else ""
-    auth_alg = profile.auth_alg if profile.auth_alg else ""
-    key_mgmt = profile.key_mgmt if profile.key_mgmt else ""
-    psk = profile.psk if profile.psk else ""
-    print(f"{ssid:<25} {auth_alg:<15} {key_mgmt:<15} {psk}")
+# Function to print macOS Wi-Fi profiles
+def print_macos_profiles(profile):
+    """Prints the macOS Wi-Fi profiles"""
+    print(f"{profile.ssid:<25} {profile.password}")
 
 # Main function to select the operating system and retrieve Wi-Fi passwords
 def main():
     print("Select the operating system:")
     print("1. Windows")
     print("2. Linux")
+    print("3. macOS")
     choice = input("Enter your choice: ")
 
-    if choice == "1":
+    if choice == "1" and platform.system() == "Windows":
         get_windows_saved_wifi_passwords()
-    elif choice == "2":
+    elif choice == "2" and platform.system() == "Linux":
         get_linux_saved_wifi_passwords()
+    elif choice == "3" and platform.system() == "Darwin":
+        get_macos_saved_wifi_passwords()
     else:
-        print("Invalid choice. Please select 1 for Windows or 2 for Linux.")
+        print("Invalid choice or unsupported operating system.")
 
 if __name__ == "__main__":
     main()
