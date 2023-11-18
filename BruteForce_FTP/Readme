@@ -1,0 +1,25 @@
+FTP Brute Force
+
+## Overview
+FTP Brute Force is a simple Python script for brute-forcing FTP login credentials using a wordlist. The script utilizes multithreading for improved performance.
+
+## Usage
+1. Clone the repository to your local machine.
+2. Run the script by executing `python ftp.py`.
+3. Enter the FTP server details when prompted, including the hostname or IP address, username, and port.
+4. The script will attempt to brute-force the FTP password using the provided wordlist.
+
+## Dependencies
+- Python 3
+- colorama library (`pip install colorama`)
+
+## How to Run
+```bash
+python ftp_bruteforce.py
+
+Configuration
+Adjust the number of threads (n_thread) for parallel execution.
+Customize the wordlist by modifying the "wordlist.txt" file.
+
+Disclaimer
+This script is intended for educational purposes only. Unauthorized access to computer systems is illegal and unethical. Use this script responsibly and only on systems for which you have explicit permission.
