@@ -11,24 +11,25 @@ The repository currently includes the following Python projects:
 Explore our diverse set of security tools designed for educational and authorized purposes:
 
 1. ARP Spoofer: Spoofs ARP packets on a local network, enhancing network security awareness.
-2. Backdoor: Allows remote command execution on a target machine; use responsibly for testing purposes.
-3. Code Injector: Demonstrates HTML code injection techniques, fostering a deeper understanding of web vulnerabilities.
-4. DHCP Listener: Captures DHCP packets on a Wi-Fi network and displays relevant information about the devices
-5. DNS Spoofer: Spoofs DNS responses to redirect traffic, highlighting potential security loopholes.
-6. Download Module: Downloads files from URLs securely and efficiently for legitimate purposes.
-7. Email Bomber: Sends multiple emails to a target address, emphasizing email security configurations.
-8. Execute and Send Email: Sends emails with the output of command executions, promoting secure communication practices.
-9. IP Scanner: Scans a range of IP addresses to discover active hosts, aiding network exploration.
-10. Keylogger: Records keystrokes for educational purposes, enhancing awareness about potential security risks.
-11. MAC Address Changer: Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
-12. Packet Sniffer: Captures and analyzes network packets, providing insights into network data flow.
-13. Phone finder: Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
-14. Ransomware: Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
-15. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
-16. Trojan:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
-17. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, and sends them by e-mail to a defined address.
-18. WiFi All OS password extractor: Retrieves saved WiFi passwords from Windows, Linux & MacOs.
-19. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
+2. BruteForce FTP: Script for brute-forcing FTP login credentials using a wordlist
+3. Backdoor: Allows Remote command execution on a target machine; use responsibly for testing purposes.
+4. Code Injector: Demonstrates HTML code injection techniques, fostering a deeper understanding of web vulnerabilities.
+5. DHCP Listener: Captures DHCP packets on a Wi-Fi network and displays relevant information about the devices
+6. DNS Spoofer: Spoofs DNS responses to redirect traffic, highlighting potential security loopholes.
+7. Download Module: Downloads files from URLs securely and efficiently for legitimate purposes.
+8. Email Bomber: Sends multiple emails to a target address, emphasizing email security configurations.
+9. Execute and Send Email: Sends emails with the output of command executions, promoting secure communication practices.
+10. IP Scanner: Scans a range of IP addresses to discover active hosts, aiding network exploration.
+11. Keylogger: Records keystrokes for educational purposes, enhancing awareness about potential security risks.
+12. MAC Address Changer: Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
+13. Packet Sniffer: Captures and analyzes network packets, providing insights into network data flow.
+14. Phone finder: Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
+15. Ransomware: Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
+16. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
+17. Trojan:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
+18. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, and sends them by e-mail to a defined address.
+19. WiFi All OS password extractor: Retrieves saved WiFi passwords from Windows, Linux & MacOs.
+20. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
 
 ## Usage
 
