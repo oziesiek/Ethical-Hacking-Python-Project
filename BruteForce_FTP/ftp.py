@@ -71,7 +71,7 @@ def connect_ftp():
 
 
 # read the wordlist of passwords
-passwords = open("word.txt").read().split("\n")
+passwords = open("wordlist.txt").read().split("\n")
 print_message("[+] Passwords to try:", Fore.CYAN)
 
 # put all passwords into the queue
