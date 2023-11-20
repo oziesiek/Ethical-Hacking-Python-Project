@@ -1,0 +1,29 @@
+SSH Bruteforce Python Script
+
+A simple Python script for SSH bruteforce attacks using the Paramiko library. This script attempts to authenticate with a given SSH server using a provided username and a list of passwords.
+
+## Features
+
+- Supports custom username and password lists.
+- Colored output for better visibility.
+- Automatic retry with a delay if the quota is exceeded.
+- Saves successful login credentials to a file.
+
+## Requirements
+
+- Python 3.x
+- Paramiko library (`pip install paramiko`)
+- Colorama library (`pip install colorama`)
+
+## Usage
+
+python ssh_bruteforce.py <host> -u <username> -P <password_list_file>
+<host>: The hostname or IP address of the target SSH server.
+-u <username>: The username to be used for the bruteforce attempt.
+-P <password_list_file>: Path to a file containing a list of passwords, with each password on a new line.
+
+Example:
+python ssh_bruteforce.py 192.168.1.1 -u admin -P passwords.txt
+
+Note
+This script is intended for educational purposes only. Unauthorized access to computer systems is illegal and unethical.
