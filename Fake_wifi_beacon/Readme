@@ -1,0 +1,34 @@
+# Wireless Beacon Sender
+
+This Python script utilizes Scapy to send wireless beacon frames, simulating multiple access points. It can be used for educational purposes, including ethical hacking and network security testing.
+
+## Prerequisites
+
+- Python 3.x
+- Scapy
+- Faker
+
+Install the required Python packages:
+pip install scapy faker
+
+Usage
+Open the beacon.py file.
+Replace the sender_mac variable with the desired MAC address for the sender.
+Adjust other parameters or settings in the script if needed.
+
+
+Copy code
+# Replace this with the desired MAC address for the sender
+sender_mac = "your_desired_mac_address"
+Save the file.
+
+Run the script:
+python send_beacon.py
+
+Configuration
+Number of Access Points: You can configure the number of simulated access points by modifying the n_ap variable in the script.
+# Number of access points to simulate
+n_ap = 5
+Network Interface: Set the correct network interface name (e.g., wlan0, eth0) in the iface variable.
+# Network interface name
+iface = "your_network_interface"
