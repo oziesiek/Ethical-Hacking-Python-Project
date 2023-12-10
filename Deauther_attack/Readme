@@ -1,0 +1,43 @@
+# Wireless Deauthentication Attack
+
+This Python script utilizes Scapy to perform a deauthentication attack on a target device by sending de-authentication frames to the router. This can be used for educational purposes, including ethical hacking and network security testing.
+
+## Prerequisites
+
+- Python 3.x
+- Scapy
+
+Install the required Python packages:
+pip install scapy
+
+Usage
+Open the deauther.py file.
+
+Replace the target_mac and gateway_mac variables with the MAC addresses of the target device and the router, respectively.
+
+# Replace these with the MAC addresses of your target and gateway
+target_mac = "FF:FF:FF:FF:FF:FF"  # Replace with the target device's MAC address
+gateway_mac = "FF:FF:FF:FF:FF:FF"  # Replace with the router's MAC address
+Save the file.
+
+Run the script:
+python deauther.py
+
+Obtaining Router MAC Address
+To obtain the MAC address of your router, you can follow these steps:
+Open a terminal and run the following command to list your network interfaces:
+ifconfig
+Identify the interface connected to your router (e.g., wlan0 for Wi-Fi).
+Run the following command to view the details of the selected interface:
+iw dev [your_interface] link
+Replace [your_interface] with the actual interface name.
+Look for the "Connected to" field. The MAC address next to it is the MAC address of your router.
+
+Configuration
+Network Interface: Set the correct network interface name (e.g., wlan0, eth0) in the iface variable.
+# Network interface name
+iface = "wlan0"
+                                                 
+Deauthentication Count: You can adjust the number of deauthentication frames sent by modifying the count variable in the script.
+# Number of deauthentication frames to send
+count = 100
