@@ -28,12 +28,13 @@ Explore our diverse set of security tools designed for educational and authorize
 16. MAC Address Changer: Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
 17. Packet Sniffer: Captures and analyzes network packets, providing insights into network data flow.
 18. Phone finder: Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
-19. Ransomware: Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
-20. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
-21. Trojan:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
-22. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, and sends them by e-mail to a defined address.
-23. WiFi All OS password extractor: Retrieves saved WiFi passwords from Windows, Linux & MacOs.
-24. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
+19. Proxy: mitmproxy overlay script enhances web security testing through header manipulation and overlay injection.
+20. Ransomware: Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
+21. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
+22. Trojan: A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
+23. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, and sends them by e-mail to a defined address.
+24. WiFi All OS password extractor: Retrieves saved WiFi passwords from Windows, Linux & MacOs.
+25. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
 
 ## Usage
 
