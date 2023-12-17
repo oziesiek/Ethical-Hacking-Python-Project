@@ -1,0 +1,27 @@
+## Overview
+
+This script is designed to be used with mitmproxy to inject an overlay onto HTML pages, consisting of an image and a JavaScript alert.
+
+## Features
+
+- Removes certain security headers from the response.
+- Injects an overlay HTML image onto HTML pages.
+- Displays a JavaScript alert to users.
+
+## Prerequisites
+
+- Python 3 installed
+- mitmproxy installed (`pip install mitmproxy`)
+
+## Usage
+
+1. Clone this repository
+2. Run mitmproxy: 
+mitmproxy -s proxy.py
+3. Configure your browser to use the mitmproxy proxy (127.0.0.1:8080 by default).
+
+Open your target website in the browser, and the overlay should be injected.
+
+Configuration
+Customize the OVERLAY_HTML and OVERLAY_JS variables in proxy.py for different overlay content.
+Modify the remove_header function in proxy.py to adjust header removal based on your requirements.
