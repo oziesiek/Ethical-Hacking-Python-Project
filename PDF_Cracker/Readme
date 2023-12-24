@@ -1,0 +1,29 @@
+# PDF Password Cracker
+
+## Overview
+
+PDF Password Cracker is a Python script that attempts to decrypt a password-protected PDF file using a provided word list. It uses the `pikepdf` library for PDF operations and supports colorful output using the `colorama` library.
+
+## Features
+
+- **Banner Display:** Colorful banner displayed at the beginning for a visually appealing interface.
+- **Interactive Input:** Requests user input for the PDF file and wordlist for flexibility.
+- **Password Decryption:** Iterates through the wordlist, attempting to decrypt the PDF file with each password.
+- **Colorful Output:** Utilizes colorama to display success and failure messages in a visually distinct way.
+
+## Requirements
+
+- Python 3.x
+- Install required packages using: `pip install`
+
+## Usage
+
+1. Run the script: `python pdf_cracker.py`
+2. Provide the path to the PDF file when prompted.
+3. Provide the path to the wordlist file when prompted.
+4. The script will attempt to decrypt the PDF using passwords from the wordlist.
+
+## Example
+
+```bash
+python pdf_password_cracker.py
