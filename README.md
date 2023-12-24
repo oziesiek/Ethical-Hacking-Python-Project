@@ -28,14 +28,15 @@ Explore our diverse set of security tools designed for educational and authorize
 16. Keylogger: Records keystrokes for educational purposes, enhancing awareness about potential security risks.
 17. MAC Address Changer: Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
 18. Packet Sniffer: Captures and analyzes network packets, providing insights into network data flow.
-19. Phone finder: Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
-20. Proxy: mitmproxy overlay script enhances web security testing through header manipulation and overlay injection.
-21. Ransomware: Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
-22. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
-23. Trojan: A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
-24. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, and sends them by e-mail to a defined address.
-25. WiFi All OS password extractor: Retrieves saved WiFi passwords from Windows, Linux & MacOs.
-26. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
+19. PDF Cracker: Decrypt password-protected PDF files. 
+20. Phone finder: Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
+21. Proxy: mitmproxy overlay script enhances web security testing through header manipulation and overlay injection.
+22. Ransomware: Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
+23. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
+24. Trojan: A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
+25. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, and sends them by e-mail to a defined address.
+26. WiFi All OS password extractor: Retrieves saved WiFi passwords from Windows, Linux & MacOs.
+27. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
 
 ## Usage
 
