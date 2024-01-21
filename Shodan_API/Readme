@@ -1,1 +1,16 @@
-Readme
+# Shodan DVWA Credential Checker
+
+A Python script to search for instances of Damn Vulnerable Web Application (DVWA) on Shodan and check if default credentials work.
+
+## Description
+
+This script utilizes the Shodan API to search for instances of DVWA and simulates a real user trying default credentials on each instance by visiting the login.php page to get the CSRF token and trying to log in with admin:password.
+
+## Prerequisites
+
+- Python 3.x
+- Shodan API Key: Obtain your Shodan API key from [Shodan](https://account.shodan.io/)
+
+## Installation
+
+Just clone this repository and run the script.
