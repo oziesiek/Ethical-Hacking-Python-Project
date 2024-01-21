@@ -33,10 +33,11 @@ Explore our diverse set of security tools designed for educational and authorize
 21. Proxy: mitmproxy overlay script enhances web security testing through header manipulation and overlay injection.
 22. Ransomware: Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
 23. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
-24. Trojan: A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
-25. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, and sends them by e-mail to a defined address.
-26. WiFi All OS password extractor: Retrieves saved WiFi passwords from Windows, Linux & MacOs.
-27. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
+24. Shodan API: A Python script to search for instances of Damn Vulnerable Web Application (DVWA) on Shodan and check if default credentials work.
+25. Trojan: A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
+26. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, and sends them by e-mail to a defined address.
+27. WiFi All OS password extractor: Retrieves saved WiFi passwords from Windows, Linux & MacOs.
+28. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
 
 ## Usage
 
