@@ -6,38 +6,38 @@ Welcome to the Ethical Hacking Python Projects repository! This repository conta
 
 The repository currently includes the following Python projects:
 
-# Security Tools Collection
+### 🛡️ Security Tools Collection
 
-Explore our diverse set of security tools designed for educational and authorized purposes:
+Dive into our array of security tools tailored for educational and authorized use:
 
-1. API Requester: Enables users to send GET requests to a specified API endpoint, supporting single or multiple custom requests 
-2. ARP Spoofer: Spoofs ARP packets on a local network, enhancing network security awareness.
-3. BruteForce FTP: Script for brute-forcing FTP login credentials using a wordlist
-4. BruteForce SSH: Tool to guess and try SSH login details using a list of passwords.
-5. Backdoor: Allows Remote command execution on a target machine; use responsibly for testing purposes.
-6. Code Injector: Demonstrates HTML code injection techniques, fostering a deeper understanding of web vulnerabilities.
-7. Deauther attack: Forcing devices to disconnect from a network by sending de-authentication frames
-8. DHCP Listener: Captures DHCP packets on a Wi-Fi network and displays relevant information about the devices
-9. DNS Spoofer: Spoofs DNS responses to redirect traffic, highlighting potential security loopholes.
-10. DNS Lookup Tool: script to perform DNS lookups for a user-specified target domain and record types.
-11. Download Module: Downloads files from URLs securely and efficiently for legitimate purposes.
-12. Email Bomber: Sends multiple emails to a target address, emphasizing email security configurations.
-13. Execute and Send Email: Sends emails with the output of command executions, promoting secure communication practices.
-14. Fake Wifi Beacon: Create fake access points and fooling nearby devices by sending valid beacon frames to the air 
-15. IP Scanner: Scans a range of IP addresses to discover active hosts, aiding network exploration.
-16. Keylogger: Records keystrokes for educational purposes, enhancing awareness about potential security risks.
-17. MAC Address Changer: Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
-18. Packet Sniffer: Captures and analyzes network packets, providing insights into network data flow.
-19. PDF Cracker: Decrypt password-protected PDF files. 
-20. Phone finder: Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
-21. Proxy: mitmproxy overlay script enhances web security testing through header manipulation and overlay injection.
-22. Ransomware: Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
-23. Replace Downloads: Intercepts and replaces website downloads, ensuring secure file retrieval.
-24. Shodan API: A Python script to search for instances of Damn Vulnerable Web Application (DVWA) on Shodan and check if default credentials work.
-25. Trojan: A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
-26. WiFi Password Extractor: Retrieves saved WiFi passwords from Windows network profiles, and sends them by e-mail to a defined address.
-27. WiFi All OS password extractor: Retrieves saved WiFi passwords from Windows, Linux & MacOs.
-28. ZIP File Password Cracker: Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
+1. **API Requester 🚀:** Enables users to send GET requests to a specified API endpoint, supporting single or multiple custom requests.
+2. **ARP Spoofer 🕵️‍♂️:** Spoofs ARP packets on a local network, enhancing network security awareness.
+3. **BruteForce FTP 🔐:** Script for brute-forcing FTP login credentials using a wordlist.
+4. **BruteForce SSH 🔑:** Tool to guess and try SSH login details using a list of passwords.
+5. **Backdoor 💻:** Allows Remote command execution on a target machine; use responsibly for testing purposes.
+6. **Code Injector 📥:** Demonstrates HTML code injection techniques, fostering a deeper understanding of web vulnerabilities.
+7. **Deauther attack 📶:** Forcing devices to disconnect from a network by sending de-authentication frames.
+8. **DHCP Listener 📡:** Captures DHCP packets on a Wi-Fi network and displays relevant information about the devices.
+9. **DNS Spoofer 🌐:** Spoofs DNS responses to redirect traffic, highlighting potential security loopholes.
+10. **DNS Lookup Tool 🔍:** Script to perform DNS lookups for a user-specified target domain and record types.
+11. **Download Module 📤:** Downloads files from URLs securely and efficiently for legitimate purposes.
+12. **Email Bomber 📧:** Sends multiple emails to a target address, emphasizing email security configurations.
+13. **Execute and Send Email 📤:** Sends emails with the output of command executions, promoting secure communication practices.
+14. **Fake Wifi Beacon 🚥:** Create fake access points and fooling nearby devices by sending valid beacon frames to the air.
+15. **IP Scanner 🌐:** Scans a range of IP addresses to discover active hosts, aiding network exploration.
+16. **Keylogger 📝:** Records keystrokes for educational purposes, enhancing awareness about potential security risks.
+17. **MAC Address Changer 🔄:** Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
+18. **Packet Sniffer 📶:** Captures and analyzes network packets, providing insights into network data flow.
+19. **PDF Cracker 🔓:** Decrypt password-protected PDF files.
+20. **Phone finder 📞:** Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
+21. **Proxy 🌐:** mitmproxy overlay script enhances web security testing through header manipulation and overlay injection.
+22. **Ransomware 💼:** Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
+23. **Replace Downloads 🔄:** Intercepts and replaces website downloads, ensuring secure file retrieval.
+24. **Shodan API 🌐:** A JavaScript script to search for instances of Damn Vulnerable Web Application (DVWA) on Shodan and check if default credentials work.
+25. **Trojan 🦠:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
+26. **WiFi Password Extractor 🔑:** Retrieves saved WiFi passwords from Windows network profiles and sends them by e-mail to a defined address.
+27. **WiFi All OS password extractor 🔑:** Retrieves saved WiFi passwords from Windows, Linux & MacOs.
+28. **ZIP File Password Cracker 🧩:** Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
 
 ## Usage
 
