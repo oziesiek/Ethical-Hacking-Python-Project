@@ -6,13 +6,8 @@ Warning: This repository contains Python keylogger scripts designed for educatio
 
 The following Python scripts are for educational and learning purposes only. Unauthorized access to computer systems, networks, or any form of data breach is illegal and unethical. The creator of this repository does not promote or condone any illegal or malicious activities.
 
-## Purpose
-
-The purpose of this repository is to showcase keylogger implementation in Python for educational purposes. Keyloggers can be useful tools for ethical hackers and cybersecurity professionals to test and strengthen the security of systems, networks, and applications with explicit permission from the owners.
-
 ## Prerequisites
 
 Before running the Python keylogger scripts, ensure you have the required libraries installed. You can install them using the following commands:
 
-```bash
 pip install pynput
