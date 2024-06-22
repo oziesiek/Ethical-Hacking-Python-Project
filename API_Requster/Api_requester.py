@@ -51,7 +51,7 @@ def main():
     endpoint = input(f"{Fore.RED}Enter the API endpoint:{Style.RESET_ALL} ")
 
     # Ask the user if they want to provide a file or a single custom value
-    option = input(f"Do you want to provide a file with a list of calls? {Fore.RED}(Y/N){Style.RESET_ALL}: ").strip().lower()
+    option = input(f"Do you want to provide a file containing a list of API calls (e.g., 'call1', 'call2', etc.)? {Fore.RED}(Y/N){Style.RESET_ALL}: ").strip().lower()
 
     if option == 'y':
         # If the user wants to provide a file, get the filename
@@ -88,6 +88,11 @@ def main():
 if __name__ == "__main__":
     # Call the main function
     main()
-    # Pause to keep the console window open after execution
-    input("Press Enter to exit...")
-
+    while True:
+        # Ask the user if they want to make another call
+        another_call = input(f"Do you want to make another call? {Fore.RED}(Y/N){Style.RESET_ALL}: ").strip().lower()
+        if another_call == 'y':
+            main()
+        else:
+            print("Exiting the program.")
+            break
