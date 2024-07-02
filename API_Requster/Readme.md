@@ -44,3 +44,5 @@ The repository includes a compiled executable file (api_requester.exe) that is c
 Notes 📝
 
     The colorama library is used for terminal text coloring, enhancing the display of responses.
+
+    
