@@ -1,0 +1,11 @@
+fact
+: 200 - {"fact":"Blue-eyed, pure white cats are frequently deaf.","length":47}
+fact
+: 200 - {"fact":"Blue-eyed, white cats are often prone to deafness.","length":50}
+fact
+: 200 - {"fact":"A cat will tremble or shiver when it is extreme pain.","length":53}
+fact
+: 200 - {"fact":"The average litter of kittens is between 2 - 6 kittens.","length":55}
+fact
+: 200 - {"fact":"The first true cats came into existence about 12 million years ago and were the Proailurus.","length":91}
+fact: 200 - {"fact":"Cats have individual preferences for scratching surfaces and angles. Some are horizontal scratchers while others exercise their claws vertically.","length":145}
