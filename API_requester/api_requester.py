@@ -1,98 +1,53 @@
-import requests
+import tkinter as tk  # Import tkinter for GUI components
+from tkinter import Text  # Import Text widget for displaying output
+import requests  # Import requests for making API calls
+import threading  # Import threading for concurrent execution
 import colorama  # for colors
 from colorama import Fore, Style
 
 # Initialize colorama for terminal text coloring
 colorama.init()
 
-# Function to print a colorful banner
-def print_ftp_banner():
-    banner = r"""
-    ___    ____  ____   ____                             __           
-   /   |  / __ \/  _/  / __ \___  ____ ___  _____  _____/ /____  _____
-  / /| | / /_/ // /   / /_/ / _ \/ __ `/ / / / _ \/ ___/ __/ _ \/ ___/
- / ___ |/ ____// /   / _, _/  __/ /_/ / /_/ /  __(__  ) /_/  __/ /    
-/_/  |_/_/   /___/  /_/ |_|\___/\__, /\__,_/\___/____/\__/\___/_/     
-                                  /_/                                                              
-    """
-    colored_banner = f"{Fore.CYAN}{banner}{Style.RESET_ALL}"
-    print(colored_banner) 
+# Function to send GET requests to a specified endpoint
+def send_get_request(endpoint):
+    """Send a GET request to the specified endpoint and display the response."""
+    output_text.delete(1.0, tk.END)  # Clear previous output
+    try:
+        response = requests.get(endpoint)  # Send a GET request
+        formatted_response = f"{Fore.YELLOW}Endpoint:{Style.RESET_ALL} {endpoint}\n{Fore.GREEN}Status Code:{Style.RESET_ALL} {response.status_code}\n{Fore.GREEN}Response:{Style.RESET_ALL} {response.text}\n"
+        output_text.insert(tk.END, formatted_response)  # Display the response
+    except Exception as e:
+        output_text.insert(tk.END, f"[X] An error occurred: {e}\n")  # Log any errors
 
-# Call the function to print the banner
-print_ftp_banner()                                                                                  
+def start_request():
+    """Start the API request in a separate thread."""
+    endpoint = endpoint_entry.get()  # Get the endpoint from the entry
+    threading.Thread(target=send_get_request, args=(endpoint,)).start()  # Start the request in a new thread
 
-# Function to send GET requests to a specified endpoint with a list of calls
-def send_get_request(endpoint, call_list):
-    responses = []
-    for call in call_list:
-        # Construct the URL for each call
-        url = f"{endpoint}/{call.strip()}"
-        # Send a GET request
-        response = requests.get(url)
-        # Append the response details to the list
-        responses.append((call, response.status_code, response.text))
-    return responses
+def create_menu():
+    """Create the main GUI menu for the API requester."""
+    global output_text, endpoint_entry  # Declare output_text and endpoint_entry as global variables
+    root = tk.Tk()  # Create the main window
+    root.title("API Requester")  # Set the window title
 
-# Function to save responses to a file
-def save_responses(responses, output_file):
-    with open(output_file, 'w') as file:
-        for call, status_code, data in responses:
-            # Write each response to the file
-            file.write(f"{call}: {status_code} - {data}\n")
+    # Set the background color of the main window
+    root.configure(bg="#778899")
 
-# Function to format and colorize a response for better display
-def format_response(call, status_code, data):
-    formatted_response = f"{Fore.YELLOW}{call}:{Style.RESET_ALL} {Fore.GREEN}{status_code}{Style.RESET_ALL} - {data}"
-    return formatted_response
+    # Input Fields
+    tk.Label(root, text="API Endpoint:", fg="white", bg="#778899").pack(pady=5)  # Label for endpoint
+    endpoint_entry = tk.Entry(root, width=50)  # Entry for API endpoint
+    endpoint_entry.pack(pady=5)  # Add padding
 
-# Main function to execute the script
-def main():
-    # Get the API endpoint from the user
-    endpoint = input(f"{Fore.RED}Enter the API endpoint:{Style.RESET_ALL} ")
+    # Button to start the request
+    btn_request = tk.Button(root, text="Send Request", command=start_request, bg="#778899", fg="white")  # Button to send request
+    btn_request.pack(pady=10)  # Add padding
 
-    # Ask the user if they want to provide a file or a single custom value
-    option = input(f"Do you want to provide a file containing a list of API calls (e.g., 'call1', 'call2', etc.)? {Fore.RED}(Y/N){Style.RESET_ALL}: ").strip().lower()
+    # Output Text Widget
+    output_text = Text(root, height=20, width=80, bg="#2C3E50", fg="white", wrap="word")  # Create a Text widget for output
+    output_text.pack(pady=10)  # Add padding
 
-    if option == 'y':
-        # If the user wants to provide a file, get the filename
-        filename = input(f"Provide .txt filename with the list of calls to be made{Fore.CYAN} (Press Enter to skip):{Style.RESET_ALL} ")
-        if not filename:
-            # If no filename is provided, ask for a single custom request
-            single_request = input("Enter the input to make a single request: ").strip()
-            call_list = [single_request] if single_request else []
-        else:
-            # Read the list of calls from the file
-            with open(filename, 'r') as file:
-                call_list = file.readlines()
-    else:
-        # If the user doesn't want to provide a file, ask for a single custom request
-        single_request = input("Enter the call to make a single request: ").strip()
-        call_list = [single_request] if single_request else []
+    root.mainloop()  # Start the GUI event loop
 
-    # Send GET requests
-    responses = send_get_request(endpoint, call_list)
-
-    # Ask the user if they want to save responses to a file or display on the screen
-    output_file = input(f"Enter the output file name {Fore.CYAN}(Press Enter to display it on screen):{Style.RESET_ALL} ")
-    if output_file:
-        # If a filename is provided, save responses to the file
-        save_responses(responses, output_file)
-        print(f"Responses saved to {Fore.YELLOW}{output_file}{Style.RESET_ALL}")
-    else:
-        # If no filename is provided, display responses on the screen
-        for call, status_code, data in responses:
-            formatted_response = format_response(call, status_code, data)
-            print(formatted_response)
-
-# Entry point to run the script
+# Entry point of the program
 if __name__ == "__main__":
-    # Call the main function
-    main()
-    while True:
-        # Ask the user if they want to make another call
-        another_call = input(f"Do you want to make another call? {Fore.RED}(Y/N){Style.RESET_ALL}: ").strip().lower()
-        if another_call == 'y':
-            main()
-        else:
-            print("Exiting the program.")
-            break
+    create_menu()  # Create the GUI menu
