@@ -31,10 +31,6 @@ This Python script is designed for **educational purposes only**. It demonstrate
 
 To compile this script into an executable file, you can use tools like `PyInstaller`. Adjustments in the code may be necessary to ensure compatibility with the compiled format.
 
-## Conclusion
-
-![Educational Use Only](https://img.shields.io/badge/Educational%20Use%20Only-red?style=for-the-badge)
-
 ---
 
 Happy hacking! 🎉
