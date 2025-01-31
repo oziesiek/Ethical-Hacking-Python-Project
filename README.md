@@ -34,6 +34,7 @@ Dive into our array of security tools tailored for educational and authorized us
 22. **Replace Downloads 🔄:** Intercepts and replaces website downloads, ensuring secure file retrieval.
 23. **Shodan API 🌐:** A JavaScript script to search for instances of Damn Vulnerable Web Application (DVWA) on Shodan and check if default credentials work.
 24. **Trojan 🦠:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
+25. **Virus 🐍:**  Demonstrate how a virus can spread and maintain persistence on a system for educational purposes.
 25. **WiFi Password Extractor 🔑:** Retrieves saved WiFi passwords from Windows network profiles and sends them by e-mail to a defined address.
 26. **WiFi All OS password extractor 🗝️:** Retrieves saved WiFi passwords from Windows, Linux & MacOs.
 27. **Win_Destructor 💀: illustration of the potential risks of running untrusted code on a Windows machine by showcasing the deletion of essential system files.
