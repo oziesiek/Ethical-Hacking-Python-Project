@@ -32,6 +32,7 @@ Dive into our array of security tools tailored for educational and authorized us
 20. **Proxy 🌐:** mitmproxy overlay script enhances web security testing through header manipulation and overlay injection.
 21. **Ransomware 💼:** Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
 22. **Replace Downloads 🔄:** Intercepts and replaces website downloads, ensuring secure file retrieval.
+23. **Rootkit 👾:**  Script designed to stealthly monitor and manipulate system processes
 23. **Shodan API 🌐:** A JavaScript script to search for instances of Damn Vulnerable Web Application (DVWA) on Shodan and check if default credentials work.
 24. **Trojan 🦠:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
 25. **Virus 🐍:**  Demonstrate how a virus can spread and maintain persistence on a system for educational purposes.
