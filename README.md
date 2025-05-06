@@ -32,6 +32,7 @@ Dive into our array of security tools tailored for educational and authorized us
 20. **Proxy 🌐:** mitmproxy overlay script enhances web security testing through header manipulation and overlay injection.
 21. **Ransomware 💼:** Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
 22. **Replace Downloads 🔄:** Intercepts and replaces website downloads, ensuring secure file retrieval.
+<<<<<<< HEAD
 23. **Rootkit 👾:**  Script designed to stealthly monitor and manipulate system processes
 23. **Shodan API 🌐:** A JavaScript script to search for instances of Damn Vulnerable Web Application (DVWA) on Shodan and check if default credentials work.
 24. **Trojan 🦠:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
@@ -40,6 +41,16 @@ Dive into our array of security tools tailored for educational and authorized us
 26. **WiFi All OS password extractor 🗝️:** Retrieves saved WiFi passwords from Windows, Linux & MacOs.
 27. **Win_Destructor 💀: illustration of the potential risks of running untrusted code on a Windows machine by showcasing the deletion of essential system files.
 28. **ZIP File Password Cracker 🧩:** Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
+=======
+23. **Rootkit 🧿:** Tool designed to stealthily monitor and manipulate system processes.
+24. **Shodan API 🌐:** A JavaScript script to search for instances of Damn Vulnerable Web Application (DVWA) on Shodan and check if default credentials work.
+25. **Trojan 🦠:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
+26. **Virus 🐍:**  Demonstrate how a virus can spread and maintain persistence on a system for educational purposes.
+27. **WiFi Password Extractor 🔑:** Retrieves saved WiFi passwords from Windows network profiles and sends them by e-mail to a defined address.
+28. **WiFi All OS password extractor 🗝️:** Retrieves saved WiFi passwords from Windows, Linux & MacOs.
+29. **Win_Destructor 💀: illustration of the potential risks of running untrusted code on a Windows machine by showcasing the deletion of essential system files.
+30. **ZIP File Password Cracker 🧩:** Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
+>>>>>>> test
 
 ## Usage
 
