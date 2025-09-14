@@ -23,25 +23,26 @@ Dive into our array of security tools tailored for educational and authorized us
 11. **Email Bomber 📧:** Sends multiple emails to a target address, emphasizing email security configurations.
 12. **Execute and Send Email 📤:** Sends emails with the output of command executions, promoting secure communication practices.
 13. **Fake Wifi Beacon 🚥:** Create fake access points and fooling nearby devices by sending valid beacon frames to the air.
-14. **IP Scanner 🌐:** Scans a range of IP addresses to discover active hosts, aiding network exploration.
-15. **Keylogger 📝:** Records keystrokes for educational purposes, enhancing awareness about potential security risks.
-16. **MAC Address Changer 🔄:** Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
-17. **Packet Sniffer 📶:** Captures and analyzes network packets, providing insights into network data flow.
-18. **PDF Cracker 🔓:** Decrypt password-protected PDF files.
-19. **Phone finder 📞:** Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
-20. **Proxy 🌐:** mitmproxy overlay script enhances web security testing through header manipulation and overlay injection.
-21. **Ransomware 💼:** Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
-22. **Replace Downloads 🔄:** Intercepts and replaces website downloads, ensuring secure file retrieval.
-23. **Rootkit 👾:**  Script designed to stealthly monitor and manipulate system processes
-24. **Shodan API 🌐:** A script to search for instances of Damn Vulnerable Web Application (DVWA) on Shodan and check if default credentials work.
-25. **Sweeper 🎯:** Network scanning tool that combines port scanning with network range analysis
-26. **Trojan 🦠:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
-27. **Virus 🐍:**  Demonstrate how a virus can spread and maintain persistence on a system for educational purposes.
-28. **WiFi Password Extractor 🔑:** Retrieves saved WiFi passwords from Windows network profiles and sends them by e-mail to a defined address.
-29. **WiFi All OS password extractor 🗝️:** Retrieves saved WiFi passwords from Windows, Linux & MacOs.
-30. **Win_Destructor:** 💀 Illustration of the potential risks of running untrusted code on a Windows machine by showcasing the deletion of essential system files.
-31. **ZIP File Password Cracker 🧩:** Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
-32. **Rootkit 🧿:** Tool designed to stealthily monitor and manipulate system processes.
+14. **FTP Storm 🌩️:** Collection of tools designed for testing the security of FTP and SFTP servers.
+15. **IP Scanner 🌐:** Scans a range of IP addresses to discover active hosts, aiding network exploration.
+16. **Keylogger 📝:** Records keystrokes for educational purposes, enhancing awareness about potential security risks.
+17. **MAC Address Changer 🔄:** Modifies the MAC address of a network interface on Unix-like systems for increased anonymity.
+18. **Packet Sniffer 📶:** Captures and analyzes network packets, providing insights into network data flow.
+19. **PDF Cracker 🔓:** Decrypt password-protected PDF files.
+20. **Phone finder 📞:** Retrieves comprehensive details about phone numbers, including country, carrier, and validity.
+21. **Proxy 🌐:** mitmproxy overlay script enhances web security testing through header manipulation and overlay injection.
+22. **Ransomware 💼:** Simulation designed to demonstrate the mechanics of ransomware attacks, utilizing symmetric and asymmetric encryption techniques.
+23. **Replace Downloads 🔄:** Intercepts and replaces website downloads, ensuring secure file retrieval.
+24. **Rootkit 👾:**  Script designed to stealthly monitor and manipulate system processes
+25. **Shodan API 🌐:** A script to search for instances of Damn Vulnerable Web Application (DVWA) on Shodan and check if default credentials work.
+26. **Sweeper 🎯:** Network scanning tool that combines port scanning with network range analysis
+27. **Trojan 🦠:** A malicious PDF executor that downloads and runs a malicious PDF file, emphasizing caution against potential threats.
+28. **Virus 🐍:**  Demonstrate how a virus can spread and maintain persistence on a system for educational purposes.
+29. **WiFi Password Extractor 🔑:** Retrieves saved WiFi passwords from Windows network profiles and sends them by e-mail to a defined address.
+30. **WiFi All OS password extractor 🗝️:** Retrieves saved WiFi passwords from Windows, Linux & MacOs.
+31. **Win_Destructor:** 💀 Illustration of the potential risks of running untrusted code on a Windows machine by showcasing the deletion of essential system files.
+32. **ZIP File Password Cracker 🧩:** Cracks password-protected ZIP files using a dictionary attack, facilitating authorized access to protected content.
+33. **Rootkit 🧿:** Tool designed to stealthily monitor and manipulate system processes.
 
 ## Usage
 
