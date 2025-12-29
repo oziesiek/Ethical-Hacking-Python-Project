@@ -1,25 +1,34 @@
-FTP Brute Force
+# FTP Brute Force
 
-## Overview
-FTP Brute Force is a simple Python script for brute-forcing FTP login credentials using a wordlist. The script utilizes multithreading for improved performance.
+A Python script for brute-forcing FTP login credentials using a customizable wordlist. Designed for educational purposes to demonstrate security concepts.
+
+## Features
+
+- **Multithreading**: Parallel password attempts for improved performance.
+- **Colorful Output**: Enhanced readability with colorama library.
+- **Simple Interface**: Command-line prompts for easy configuration.
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies:  
+   `pip install colorama`
 
 ## Usage
-1. Clone the repository to your local machine.
-2. Run the script by executing `python ftp.py`.
-3. Enter the FTP server details when prompted, including the hostname or IP address, username, and port.
-4. The script will attempt to brute-force the FTP password using the provided wordlist.
 
-## Dependencies
-- Python 3
-- colorama library (`pip install colorama`)
+Run the script and follow the prompts  
 
-## How to Run
-```bash
-python ftp_bruteforce.py
+- Enter the FTP server hostname or IP address.
+- Provide the username.
+- Specify the port (default is 21).
 
-Configuration
-Adjust the number of threads (n_thread) for parallel execution.
-Customize the wordlist by modifying the "wordlist.txt" file.
+The script will attempt logins using passwords from `wordlist.txt`.
 
-Disclaimer
-This script is intended for educational purposes only. Unauthorized access to computer systems is illegal and unethical. Use this script responsibly and only on systems for which you have explicit permission.
+## Configuration
+
+- **Threads**: Modify `n_thread` in the script (default: 30) to adjust parallel execution.
+- **Wordlist**: Update `wordlist.txt` with your password list, one per line.
+
+## Disclaimer
+
+This script is intended for educational purposes only. Unauthorized access to systems is illegal and unethical. Use only on systems you own or have explicit permission to test. The author is not responsible for misuse.
